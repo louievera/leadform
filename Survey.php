@@ -39,19 +39,21 @@ class Survey
 		$chatInt = empty($_POST['chatInt']) ? 'no' : $_POST['chatInt'];
 		$chatApp = empty($_POST['chatApp']) ? 'no' : $_POST['chatApp'];
 
-		$msg = '<b>Name:</b>'.$_POST['clientName'].'<br>';
+		$msg = '<html><body>';
+		$msg .= '<b>Name:</b>'.$_POST['clientName'].'<br>';
 		$msg .= '<b>Email</b>'.$_POST['clientEmail'].'<br>';
 		$msg .= '<b>Website</b>'.$_POST['website'].'<br>';
 		$msg .= '<b>Phone number</b>'.$_POST['phoneNumber'].'<br>';
 		$msg .= '<b>Chat Integration</b>'.$chatInt.'<br>';
 		$msg .= '<b>Chat Application used</b>'.$chatApp.'<br>';
 		$msg .= '<b>Digital market</b>'.$digiMark.'<br>';
+		$msg .= '</body></html>';
 
 		$header = "MIME-Version 1.0"."\r\n";
 		$header .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
-		// $receiver = "alanyong@icloud.com,margarita@concert8.com,daryl@concert8.com";
-		$receiver = "vera.jl1104@gmail.com";
 		
+		$receiver ="alanyong@icloud.com,margarita@concert8.com,daryl@concert8.com,vera.jl1104@gmail.com,jim.paolo.castro@gmail.com,sidumali@yahoo.com";
+				
 		$subject = 'Survey answer '.$_POST['clientName'];
 
 		$send = mail($receiver, $subject, $msg, $header);
