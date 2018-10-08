@@ -49,13 +49,13 @@ class Survey
 		$msg .= '<b>Digital market</b>'.$digiMark.'<br>';
 		$msg .= '</body></html>';
 */
-		$msg = 'Name:'.$_POST['clientName'].'\r\n';
-		$msg .= 'Email:'.$_POST['clientEmail'].'\r\n';
-		$msg .= 'Website:'.$_POST['website'].'\n';
-		$msg .= 'Phone number:'.$_POST['phoneNumber'].'\r\n';
-		$msg .= 'Chat Integration:'.$chatInt.'\r\n';
-		$msg .= 'Chat Application used:'.$chatApp.'\r\n';
-		$msg .= 'Digital market:'.$digiMark.'\r\n';
+		$msg = 'Name:'.$_POST['clientName']."\r\n";
+		$msg .= 'Email:'.$_POST['clientEmail']"'\r\n";
+		$msg .= 'Website:'.$_POST['website']."\r\n";
+		$msg .= 'Phone number:'.$_POST['phoneNumber']."\r\n";
+		$msg .= 'Chat Integration:'.$chatInt."\r\n";
+		$msg .= 'Chat Application used:'.$chatApp."\r\n";
+		$msg .= 'Digital market:'.$digiMark."\r\n";
 /*
 		$header = "MIME-Version 1.0"."\r\n";
 		$header .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";	
