@@ -50,7 +50,7 @@ class Survey
 		$msg .= '</body></html>';
 */
 		$msg = 'Name:'.$_POST['clientName']."\r\n";
-		$msg .= 'Email:'.$_POST['clientEmail']"'\r\n";
+		$msg .= 'Email:'.$_POST['clientEmail']."\r\n";
 		$msg .= 'Website:'.$_POST['website']."\r\n";
 		$msg .= 'Phone number:'.$_POST['phoneNumber']."\r\n";
 		$msg .= 'Chat Integration:'.$chatInt."\r\n";
