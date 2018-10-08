@@ -38,7 +38,7 @@ class Survey
 		$digiMark = empty($_POST['digiMarket']) ? 'no' : $_POST['digiMarket'];
 		$chatInt = empty($_POST['chatInt']) ? 'no' : $_POST['chatInt'];
 		$chatApp = empty($_POST['chatApp']) ? 'no' : $_POST['chatApp'];
-
+/*
 		$msg = '<html><body>';
 		$msg .= '<b>Name:</b>'.$_POST['clientName'].'<br>';
 		$msg .= '<b>Email</b>'.$_POST['clientEmail'].'<br>';
@@ -48,10 +48,19 @@ class Survey
 		$msg .= '<b>Chat Application used</b>'.$chatApp.'<br>';
 		$msg .= '<b>Digital market</b>'.$digiMark.'<br>';
 		$msg .= '</body></html>';
-
+*/
+		$msg = 'Name:'.$_POST['clientName'].'\n';
+		$msg .= 'Email:'.$_POST['clientEmail'].'\n';
+		$msg .= 'Website:'.$_POST['website'].'\n';
+		$msg .= 'Phone number:'.$_POST['phoneNumber'].'\n';
+		$msg .= 'Chat Integration:'.$chatInt.'\n>';
+		$msg .= 'Chat Application used:'.$chatApp.'\n';
+		$msg .= 'Digital market:'.$digiMark.'\n';
+/*
 		$header = "MIME-Version 1.0"."\r\n";
-		$header .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
-		
+		$header .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";	
+*/		
+		$header = '';
 		$receiver ="alanyong@icloud.com,margarita@concert8.com,daryl@concert8.com,vera.jl1104@gmail.com,jim.paolo.castro@gmail.com,sidumali@yahoo.com";
 				
 		$subject = 'Survey answer '.$_POST['clientName'];
