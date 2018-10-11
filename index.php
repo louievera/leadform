@@ -109,23 +109,24 @@ $(document).ready(function(){
 	{
 		var splitParam = webParam.split('='); 
 		var emailSuccess = splitParam[1];
+		var modal = $("#success-modal");
+		modal.hide();
 
 		if(emailSuccess == 'success')
 		{
-			$("#success-modal").css("display","visible");
-	 		// alert(emailSuccess);	
+			modal.show();
 		}
 		else{
-			$("#success-modal").css("display","none");
+			modal.hide();
 		}
 	}
 	else
 	{
-		$("#success-modal").css("display","none");
+		modal.hide();
 	}
 
 		$("#close").click(function(){ 
-			$("#success-modal").css("display","none");
+			modal.hide();
 		});
 
 });

@@ -9,7 +9,10 @@
 <body>
 	<div class='container col-xs-4 col-xs-offset-4'>
 		<a class='close' id='close'>X</a>
-		<center><h1 class='modal-head'>Success!</h1></center>
+		<center>
+			<img src='assets/checkSuccess.png'>
+			<h1 class='modal-head'>Success!</h1>
+		</center>
 
 		<div>
 			<center>
