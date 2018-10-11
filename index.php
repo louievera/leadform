@@ -50,7 +50,7 @@ require('actions.php');
 		foreach($fields['question1'] as $key=>$val)
 		{
 			echo "<div class='form-group col-xs-6'>";
-			echo "<input type='".$val['type']."' class='form-control' placeholder='".$key."' id='".$val['name']."' name='".$val['name']."'>";
+			echo "<input type='".$val['type']."' class='form-control' placeholder='".$key."' id='".$val['name']."' name='".$val['name']."' required>";
 			echo "</div>";
 		}
 		?>
