@@ -1,16 +1,79 @@
+body
+{
+	background-color: #f39c1f;
+}
 .button-style
 {
-	 background-color: #f39c1f; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+	background-color: #000000;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bolder;
+	display: inline-block;
+	font-size: 16px;
 }
 
+#head
+{
+	font-size: 24px;
+	font-weight: bolder;
+}
 .container
 {
 	background: #f7f7f7;
+	margin-top: 5px;
+}
+
+hr{
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#000000;
+  height: 1px;
+}
+
+.background-container
+{
+	
+}
+.form-check-inline
+{
+	margin-bottom: 10px;
+}
+.form-group
+{
+	margin-top: 10px;
+}
+
+#success-modal
+{
+	position: fixed; /* Sit on top of the page content */
+	
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+	z-index: 2;
+}
+
+.modal-head
+{
+	font-weight: bolder;
+	font-size: 50px;
+}
+
+.style-modal-content
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+.container
+{
+	vertical-align: center;
 }
